@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/9nrQDYD/Capture.png">
+    <meta name="description" content="KaplanTokens reveals your attackers. It allows you to generate token based honeypots. It's free and no registration required">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description"content="KaplanTokens is a free tool that helps you discover you’ve been breached by having attackers announce themselves.  The tokens allow you to implant traps around your network and notifies you as soon as they are triggered.">
+    <meta name="author" content="Aziz Kaplan">
+    <meta property="og:url" content="https://kaplantokens.com">
+    <meta property="og:site_name" content="KaplanTokens"/>
+    <meta name="keywords" content="Kaplan token,KaplanTokens,Kaplantoken,Kaplan tokens,Honeytoken,Honeytokens,Web bug,DNS token,URL token,Aziz Kaplan,Kaplan,kaplansecurity,KaplanSecurity,kaplan security,Kaplan Security,Kaplan,canarytokens,canary tokens">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KaplanTokens</title>
+    <style>
+      
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          background-color:#dbdbdb ;
+          
+        }
+        
+        .topnav {
+          overflow: hidden;
+          background-color: black;
+          
+          border: 2px solid transparent;
+         
+         
+        }
+        
+        .topnav a {
+         
+
+            
+
+            float: left;
+            display: block;
+            color: goldenrod;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            transition: font-size 1s;
+            transition: color 1s;
+            transition: text-align  1s ;
+            
+            
+            
+            
+            
+            
+        }
+        
+        .topnav a:hover {
+          transition: font-size 1s;
+          font-size: 18px;
+          color: #b98c1a;
+          
+          
+        }
+        
+        .topnav a.active {
+          background-color: black;
+          color: #b98c1a;
+       
+          transition: text-align  1s ;
+          
+          
+          
+
+        }
+        .active{
+          padding-right: 10%;
+        }
+        .topnav .icon {
+          display: none;
+          
+          
+          
+        }
+        .styleHandler{
+
+
+            padding-top:40px;
+            padding-left: 100px;
+
+        }
+        #nav{
+          display: flex;
+          justify-content: center;
+          
+        }
+        @media screen and (max-width: 1150px) {
+          #nav{
+          display: block;
+          
+         
+        }
+        .active{
+          padding-right: 0%;
+        }
+          .topnav a:not(:first-child) {display: none;}
+          .topnav a.icon {
+            float: right;
+            display: block;
+            
+            
+            
+          }
+          .styleHandler{
+            position: relative;
+            top:0px;
+            text-align: center;
+            
+    
+          }
+          
+          .topnav a {
+            position: relative;
+            left:0px;
+            float: left;
+            display: block;
+            color: goldenrod;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            transition: font-size 0.3s;
+            transition: text-align  1s ;
+            
+            
+            
+            
+            
+            
+            }
+            
+            #sh{
+            position: sticky;
+            float: left;
+            text-align: center;
+            
+            }
+            
+            
+          
+        }
+        
+        @media screen and (max-width: 1150px) {
+          
+          .to
+          .topnav.responsive {position: relative;}
+          .topnav.responsive .icon {
+            
+            position: absolute;
+            right: 0;
+            top: 0;
+            
+            
+          }
+          .styleHandler{
+            
+            position: relative;
+            top:0px;
+            text-align: center;
+            
+          }
+          .topnav a.active {
+            
+            display: inline-block;
+            text-align: center; 
+            margin-right: 0%; 
+            
+            text-align: center;
+            overflow: visible; 
+            
+            
+            }
+         
+            .topnav a:hover {
+              
+            background-color: transparent;
+            color: #b98c1a;
+            font-size: 17px;
+            
+            
+            
+            
+       
+            }
+          .topnav.responsive a {
+            
+            float: none;
+            display: block;
+            text-align: left;
+            
+            
+            
+          }
+        }
+        
+        
+        
+        </style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+      <div id="nav">
+            <a href="/"  style="    text-align: center;" class="active"><img src="https://i.ibb.co/jWf50pL/aziz2.jpg"/ width="200px"></a>
+            <a href="/kaplantoken" style="    text-align: center;" class="styleHandler">What's KaplanToken?</a>
+            <a href="/termsofuse" style="    text-align: center;" class="styleHandler">Terms Of Use</a>
+            <a href="/contact" style="    text-align: center;" class="styleHandler" >Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+      </div>
+      </div>
+      {%block body%}
+
+      {%endblock%}
+
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+    
+</body>
+
+</html>

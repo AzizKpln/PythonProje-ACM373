@@ -1,0 +1,339 @@
+{%extends "layout.html"%}
+
+{%block body%}
+
+
+<style>
+  @media screen and (min-width: 1150px) {
+    .footer{
+      position: relative;
+     
+      width: 100%;
+      
+      left: 0;
+      right: 0;
+      display: block;
+      max-width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      clear:both;
+    }
+    .fa-instagram {
+      background-color: #010c0a;
+      color:goldenrod;
+      border: 1px solid goldenrod;
+    }
+    
+    .fa-linkedin {
+      background-color: #010c0a;
+      color:goldenrod;
+      border: 1px solid goldenrod;
+  }
+  .fa-github {
+    background-color: #010c0a;
+    color:goldenrod;
+    border: 1px solid goldenrod;
+}
+
+    .fa {
+  padding: 15px;
+
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+
+}
+    .fa-facebook {
+      background-color: #010c0a;
+    color:goldenrod;
+    border: 1px solid goldenrod;
+  }
+ 
+    .afterPage{
+        position: absolute;
+        padding:100px;
+        width: 100%;
+        height: 100%;
+        background-color: #010c0a;
+        overflow: hidden;
+        
+    }
+    .tokenPage{
+   
+        height: 100px;
+        
+        
+    }
+    .select_{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding-left:10%;
+    text-align: center;
+    border: 1px solid goldenrod;
+    padding-right: 10%;
+    padding-top: 1%;
+    cursor: pointer;
+    padding-bottom: 1%;
+    background-color: black;
+    color:goldenrod;
+    font-size:20px;
+    font-family: Anonymous PRO;
+    transition-property: all;
+    transition-duration: 1s;
+    
+   }
+   .select_:hover{
+    padding-right: 11%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left:11%;
+   }
+   .special {
+    text-align: left;
+
+    
+  
+    
+  }
+  .afterPage select.decorated option:hover {
+
+      font-size: 222px;
+  } 
+  #arkadas{
+  display: block; 
+        position: relative;
+        background-color: black;
+        border:1px solid goldenrod;
+        color:goldenrod;
+        font-size:13px;
+        border-radius: 3px;
+        font-family: Anonymous PRO;
+        margin: 0 auto;
+
+        padding: 1em;
+        width: 40%;
+        text-align: center;
+        color:goldenrod;
+        font-size: 18px;
+        transition: all 0.4s;
+      }
+    #arkadas:hover{
+      padding: 1.5em;
+    }
+      ::placeholder {
+        color: goldenrod;
+      
+        opacity: 0.7;
+      }
+
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: goldenrod;
+      opacity: 0.7;
+      }
+
+      ::-ms-input-placeholder { /* Microsoft Edge */
+      color: goldenrod;
+      opacity: 0.7;
+      }
+      #inputSubmit{
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+        background-color: black;
+        border: 1px solid goldenrod;
+        padding: 1.5em;
+        font-family: Anonymous PRO;
+        transition: all 0.8s;
+        font-size: 18px;
+        color:goldenrod;
+      }
+      #inputSubmit:hover{
+        display: block;
+        margin: 0 auto;
+        width: 43%;
+        background-color: black;
+        border: 1px solid goldenrod;
+        padding: 1.8em;
+        font-family: Anonymous PRO;
+        font-size: 20px;
+
+        color:goldenrod;
+      }
+  }
+
+   @media screen and (max-width: 1150px) {
+    #inputSubmit{
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        background-color: black;
+        border: 1px solid goldenrod;
+        padding: 2em;
+        font-family: Anonymous PRO;
+        transition: all 0.8s;
+        font-size: 18px;
+        color:goldenrod;
+      }
+      #inputSubmit:hover{
+        display: block;
+        margin: 0 auto;
+        width: 89%;
+        background-color: black;
+        border: 1px solid goldenrod;
+        padding: 2em;
+        font-family: Anonymous PRO;
+        font-size: 15px;
+
+        color:goldenrod;
+      }
+    .afterPage select.decorated option:hover {
+
+    font-size: 222px;
+    } 
+    .select_:hover{
+        height:65px;
+        
+      }
+    .afterPage{
+        padding:50px;
+        position:absolute;
+        height: 140%;
+        width: 100%;
+        background-color: #010c0a;
+
+
+    } 
+    .tokenPage{
+        display: block;
+        
+        height: 130px;
+     
+    }
+    .select_{
+        display: block; 
+        position: relative;
+        background-color: black;
+        border:1px solid goldenrod;
+        color:goldenrod;
+        transition: all 1s;
+        cursor: pointer;
+        font-size:13px;
+        height: 50px;
+        width: 92%;
+        border-radius: 3px;
+        font-family: Anonymous PRO;
+        margin: 0 auto;
+        padding: 1.2em;
+        transition: all 0.6s;
+        text-align: center;
+      } 
+      #arkadas{
+  display: block; 
+        position: relative;
+        background-color: black;
+        border:1px solid goldenrod;
+        color:goldenrod;
+        font-size:13px;
+        border-radius: 3px;
+        font-family: Anonymous PRO;
+        margin: 0 auto;
+        padding: 1em;
+
+        text-align: center;
+
+        color:goldenrod;
+        width: 92%;
+        transition: all 0.4s;
+        
+      }
+    #arkadas:hover{
+      padding: 1.5em;
+    }
+      ::placeholder {
+        color: goldenrod;
+      
+        opacity: 0.7;
+      }
+
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: goldenrod;
+      opacity: 0.7;
+      }
+
+      ::-ms-input-placeholder { /* Microsoft Edge */
+      color: goldenrod;
+      opacity: 0.7;
+      }
+      .footer{
+      position: relative;
+    
+      
+      left: 0;
+      right: 0;
+      display: block;
+      max-width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      clear:both;
+    }
+    .fa-instagram {
+      background-color: #010c0a;
+      color:goldenrod;
+      border: 1px solid goldenrod;
+    }
+    
+    .fa-linkedin {
+      background-color: #010c0a;
+      color:goldenrod;
+      border: 1px solid goldenrod;
+  }
+  .fa-github {
+    background-color: #010c0a;
+    color:goldenrod;
+    border: 1px solid goldenrod;
+}
+
+    .fa {
+      position: relative;
+  padding: 8px;
+
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+
+}
+    .fa-facebook {
+      background-color: #010c0a;
+    color:goldenrod;
+    border: 1px solid goldenrod;
+  }
+  }
+</style> 
+<div class="afterPage"> 
+  <form action="/" method="POST">
+        <button class="select_"  name="option" disabled>Search For A Game</button><br>
+        
+
+        <input id="arkadas" name="gameName" placeholder="Name Of The Game"/>
+        <br>
+        <input id="inputSubmit" type="submit" value="Search">
+    </form>
+    <br><br><br>
+    <h5 style="text-align:center;font-size:18px;color:goldenrod;font-family: Anonymous PRO;">What's This Project About?</h5>
+    <h5 style="text-align:center;font-size:18px;color:goldenrod;font-family: Anonymous PRO;">Go to <a href="">/about</a> to learn more about this project.</h5>
+   
+    <div class="footer">
+      <hr style="border:1px solid goldenrod;">
+      <a href="https://www.facebook.com/aziz.kaplan.96387/" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://www.instagram.com/aziz.kpln/" class="fa fa-instagram" target="_blank"></a>
+      <a href="https://www.linkedin.com/in/aziz-k-074604170/" class="fa fa-linkedin" target="_blank"></a>
+      <a href="https://github.com/AzizKpln" class="fa fa-github" target="_blank"></a>
+      <br><br><br>
+      <p style="font:Anonymous PRO;font-size:15px;">© Aziz Kaplan, Göktuğ Atahan, Melik Aydemir</p>
+      <p style="font:Anonymous PRO;font-size:15px;">Python Project ACM373</a></p>
+    </div>
+</div>
+
+
+{%endblock%}
